@@ -615,6 +615,16 @@
 		})
 	}
 
+	//this function zooms all of the test questions
+	function questionZoom(event) {
+		event.currentTarget.classList.toggle("questionzoomed");
+		document.getElementById("zoomedscreen").classList.toggle("none");
+	}
+
+	document.querySelectorAll("img:not(.pausebutton):not(.referencebutton):not(.xbutton):not(.referencesheet)").forEach(img => {
+		img.addEventListener("click", questionZoom)
+	});
+
 	function testEndImage2testEnd() {
 		currentpage = "testend";
 		document.getElementById("testendimage").style.display = "none";

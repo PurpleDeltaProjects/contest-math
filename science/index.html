@@ -2,7 +2,7 @@
 <html>
 <head>
 
-	<title>UIL Science Practice Site</title>
+	<title>UIL Science Practice | Contest Math</title>
 
 	<link rel="stylesheet" href="style.css">
 
@@ -16,7 +16,19 @@
 
 	<link rel="manifest" href="assets/icons/site.webmanifest">
 
+	<meta name="description" content="A site to help students get prepared for UIL Science competitions.">
+
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "url": "https://contest-math.netlify.app",
+      "logo": "https://contest-math.netlify.app/assets/icons/apple-touch-icon.png",
+      "name": "Contest Math"
+    }
+	</script>
 
 </head> 
 
@@ -127,6 +139,9 @@
 	</div>
 	<img src="assets/images/xbutton.png" class="xbutton" id="referencexbutton">
 </div>
+
+<!--this is the screen the shows when the test image is zoomed in-->
+<div id="zoomedscreen" class="none fullscreen zoomedscreen"></div>
 
 <!--this is the practice mode settings section-->
 <div id="practicesettings" class="none fullscreen">

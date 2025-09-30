@@ -315,6 +315,7 @@
 	bottom: 35dvh;
 	transform: translate(-50%, 0%);
 	outline: .6dvh solid #000000;
+	cursor: zoom-in;
 	}
 
 	.practiceendbox {
@@ -398,8 +399,7 @@
 	.testquestionscontainer {
 	width: 59.9vw;
 	left: 0%;
-	top: 100%;
-	transform: translate(0%, -100%);
+	bottom: 0%;
 	}
 
 	.testanswerscontainer {
@@ -422,6 +422,7 @@
 	top: 40.5%;
 	transform: translate(-50%, -50%);
 	outline: .6dvh solid #000000;
+	cursor: zoom-in;
 	}
 
 	.testquestioncolumn {
@@ -581,9 +582,28 @@
 	text-align: center;
 	}
 
+	.zoomedscreen {
+	background-color: #000000;
+	opacity: .8;
+	z-index: 10000;
+	}
 
 
 
+
+	.questionzoomed {
+	cursor: zoom-out;
+	position: fixed;
+	top: 50dvh;
+	left: 50vw;
+	transform: translate(-50%, -50%) scale(10);
+	z-index: 10001;
+	max-height: 9dvh;
+	max-width: 9vw;
+	width: auto;
+	height: auto;
+	outline: .06dvh solid #000000;
+	}
 
 	.fontsize2vmax {
 	font-size: 2vmax;	

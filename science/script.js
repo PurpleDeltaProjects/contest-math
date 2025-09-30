@@ -692,7 +692,7 @@
 	function hideReference() {
 		document.getElementById("referencescreen").style.display="none";
 		document.getElementById("referencesheet").src = "";	
-		document.getElementById("referencesheet").classList.remove("referencesheetzoomed");
+		document.getElementById("referencesheet").classList.remove("referencezoomed");
 	}
 
 	document.getElementById("referencep").addEventListener("click", showReference);
@@ -706,15 +706,25 @@
 		let mouseX = event.clientX
 		let mouseY = event.clientY
 
-		if (!image.classList.contains("referencesheetzoomed")) {
+		if (!image.classList.contains("referencezoomed")) {
 			image.style.transformOrigin = `${mouseX - imagebox.left}px ${mouseY - imagebox.top}px`
-			image.classList.add("referencesheetzoomed");
+			image.classList.add("referencezoomed");
 		} else {
-			image.classList.remove("referencesheetzoomed");
+			image.classList.remove("referencezoomed");
 		}
 	}
 
 	document.getElementById("referencesheet").addEventListener("click", referenceZoom)
+
+	//this function zooms all of the test questions
+	function questionZoom(event) {
+		event.currentTarget.classList.toggle("questionzoomed");
+		document.getElementById("zoomedscreen").classList.toggle("none");
+	}
+
+	document.querySelectorAll("img:not(.pausebutton):not(.referencebutton):not(.xbutton):not(.referencesheet)").forEach(img => {
+		img.addEventListener("click", questionZoom)
+	});
 	
 
 	function testEndImage2testEnd() {
