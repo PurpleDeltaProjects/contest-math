@@ -530,9 +530,9 @@
       null
    ],
    "questions/test/2021/invitational a/37.webp": [
-      "9.81(3SD)",
+      "9.81",
       "9.81x10^0",
-      null
+      3
    ],
    "questions/test/2021/invitational a/38.webp": [
       "1.92",
@@ -1580,9 +1580,9 @@
       null
    ],
    "questions/test/2021/state/37.webp": [
-      "20.875(5SD)",
+      "20.875",
       "2.0875x10^1",
-      null
+      5
    ],
    "questions/test/2021/state/38.webp": [
       "-9.43",
@@ -5375,9 +5375,9 @@
       null
    ],
    "questions/test/2024/district/26.webp": [
-      "-6.6(2SD)",
+      "-6.6",
       "-6.6x10^0",
-      null
+      2
    ],
    "questions/test/2024/district/27.webp": [
       null,
@@ -6380,9 +6380,9 @@
       null
    ],
    "questions/test/2024/regional/17.webp": [
-      "4.71800(6SD)",
+      "4.71800",
       "4.71800x10^0",
-      null
+      6
    ],
    "questions/test/2024/regional/18.webp": [
       "288",
@@ -10870,24 +10870,24 @@
       null
    ],
    "questions/practice/anytest/anyquestions/107.webp": [
-      "9.81(3SD)",
+      "9.81",
       "9.81x10^0",
-      null
+      3
    ],
    "questions/practice/invitationals/anyquestions/37.webp": [
-      "9.81(3SD)",
+      "9.81",
       "9.81x10^0",
-      null
+      3
    ],
    "questions/practice/anytest/word/32.webp": [
-      "9.81(3SD)",
+      "9.81",
       "9.81x10^0",
-      null
+      3
    ],
    "questions/practice/invitationals/word/11.webp": [
-      "9.81(3SD)",
+      "9.81",
       "9.81x10^0",
-      null
+      3
    ],
    "questions/practice/anytest/anyquestions/108.webp": [
       "1.92",
@@ -15070,24 +15070,24 @@
       null
    ],
    "questions/practice/anytest/anyquestions/317.webp": [
-      "20.875(5SD)",
+      "20.875",
       "2.0875x10^1",
-      null
+      5
    ],
    "questions/practice/state/anyquestions/37.webp": [
-      "20.875(5SD)",
+      "20.875",
       "2.0875x10^1",
-      null
+      5
    ],
    "questions/practice/anytest/word/95.webp": [
-      "20.875(5SD)",
+      "20.875",
       "2.0875x10^1",
-      null
+      5
    ],
    "questions/practice/state/word/11.webp": [
-      "20.875(5SD)",
+      "20.875",
       "2.0875x10^1",
-      null
+      5
    ],
    "questions/practice/anytest/anyquestions/318.webp": [
       "-9.43",
@@ -30250,24 +30250,24 @@
       null
    ],
    "questions/practice/anytest/anyquestions/1076.webp": [
-      "-6.6(2SD)",
+      "-6.6",
       "-6.6x10^0",
-      null
+      2
    ],
    "questions/practice/district/anyquestions/236.webp": [
-      "-6.6(2SD)",
+      "-6.6",
       "-6.6x10^0",
-      null
+      2
    ],
    "questions/practice/anytest/word/322.webp": [
-      "-6.6(2SD)",
+      "-6.6",
       "-6.6x10^0",
-      null
+      2
    ],
    "questions/practice/district/word/70.webp": [
-      "-6.6(2SD)",
+      "-6.6",
       "-6.6x10^0",
-      null
+      2
    ],
    "questions/practice/anytest/anyquestions/1077.webp": [
       null,
@@ -34270,24 +34270,24 @@
       null
    ],
    "questions/practice/anytest/anyquestions/1277.webp": [
-      "4.71800(6SD)",
+      "4.71800",
       "4.71800x10^0",
-      null
+      6
    ],
    "questions/practice/regional/anyquestions/227.webp": [
-      "4.71800(6SD)",
+      "4.71800",
       "4.71800x10^0",
-      null
+      6
    ],
    "questions/practice/anytest/word/383.webp": [
-      "4.71800(6SD)",
+      "4.71800",
       "4.71800x10^0",
-      null
+      6
    ],
    "questions/practice/regional/word/68.webp": [
-      "4.71800(6SD)",
+      "4.71800",
       "4.71800x10^0",
-      null
+      6
    ],
    "questions/practice/anytest/anyquestions/1278.webp": [
       "288",
