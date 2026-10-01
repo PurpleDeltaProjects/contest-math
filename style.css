@@ -1,10 +1,14 @@
-
 	html, body {
 	height: 100dvh;
 	width: 100vw;
 	margin: 0;
 	padding: 0;
-	background-image: linear-gradient(to bottom, #e6e6ff, #fff8f8, #fff8f8);
+	background-image: linear-gradient(to bottom, #003558, #003558, #001a2b);
+	overflow: hidden;
+	}
+
+	input:focus, textarea:focus {
+  	outline: none;
 	}
 
 	.fullscreen {
@@ -23,11 +27,13 @@
 	align-items: center;
 	width: 100vw;
 	height: 8dvh;
-	background-color: #003559;
+	background-color: #003558;
 	position: absolute;
 	top: 0px;
 	left: 0px;
 	z-index: 100;
+	border-radius: 0 0 1vh 1vh;
+	outline: #00416d 1px solid;
 	}
 
 	.bannerbuttons {
@@ -56,11 +62,13 @@
 	font-family: "Tahoma";
 	text-align: center;
 	font-weight: bold;
-	font-size: 1.7vmax;
+	font-size: 2vmax;
 	line-height: 1;
 	}
 
 	.mainmenutitle {
+	color: white;
+	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 	position: absolute;
 	left: 50%;
 	transform: translateX(-50%);
@@ -72,6 +80,8 @@
 	}
 
 	.settingstitle {
+	color: white;
+	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 	position: absolute;
 	left: 50%;
 	transform: translateX(-50%);
@@ -92,7 +102,7 @@
 	font-size: 1.4vmax;
 	line-height: 6dvh;
 	background-color: #ea3031;
-	border: .6dvh solid #000000;
+	border: 0px solid #000000;
 	border-radius: 1dvh;
 	position: absolute;
 	left: 50%;
@@ -148,7 +158,7 @@
 	font-size: 1.3vmax;
 	font-family: "Tahoma";
 	background-color: #ea3031;
-	border: .6dvh solid #000000;
+	border: 0px solid #000000;
 	border-radius: 1dvh;
 	cursor: pointer;
 	}
@@ -174,6 +184,17 @@
 	height: 4.4dvh;
 	}
 
+	.studybuttoncontainerscience {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 5vw;
+	position: absolute;
+	bottom: 10.2%;
+	width: 100%;
+	height: 4.4dvh;
+	}
+
 	.testbuttoncontainer {
 	bottom: 3.25%;
 	gap: 5vw;
@@ -190,7 +211,7 @@
 	font-size: 1.3vmax;
 	font-family: "Tahoma";
 	background-color: #ea3031;
-	border: .6dvh solid #000000;
+	border: 0px solid #000000;
 	border-radius: 1dvh;
 	cursor: pointer;
 	}
@@ -253,7 +274,7 @@
 	left: 0px;
 	}
 
-	.questionboxpractice {
+	.questionboxpracticemain {
 	position: absolute;
 	width: 45vw;
 	height: auto;
@@ -264,6 +285,39 @@
 	outline: .6dvh solid #000000;
 	}
 
+	.questionboxpracticescience {
+	position: absolute;
+	max-width: 50vw;
+	max-height: 55dvh;
+	left: 50%;
+	bottom: 35dvh;
+	transform: translate(-50%, 0%);
+	outline: .6dvh solid #000000;
+	cursor: zoom-in;
+	}
+
+	.questionboxpracticemath {
+	position: absolute;
+	width: 45vw;
+	max-height: 50dvh;
+	left: 50%;
+	bottom: 35dvh;
+	transform: translate(-50%, 0%);
+	outline: .6dvh solid #000000;
+	cursor: zoom-in;
+	}
+
+	.questionboxpracticecalculator {
+	position: absolute;
+	max-width: 60vw;
+	max-height: 50dvh;
+	left: 50%;
+	bottom: 35dvh;
+	transform: translate(-50%, 0%);
+	outline: .6dvh solid #000000;
+	cursor: zoom-in;
+	}
+
 	.practiceendbox {
 	background-color: white;
 	position: absolute;
@@ -271,6 +325,28 @@
 	flex-direction: column;
 	width: 60%;
 	height: 35%;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	border: .6dvh solid #000000;
+	border-radius: 1dvh;
+	color: #000000;
+	align-items: center;
+	justify-content: center;
+	gap: 2dvh;
+	text-align: center;
+	font-weight: bold;
+	font-size: 1.3vmax;
+	font-family: "Tahoma";
+	}
+
+	.aboutbox {
+	background-color: white;
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	width: 60%;
+	height: 45%;
 	left: 50%;
 	top: 50%;
 	transform: translate(-50%, -50%);
@@ -304,13 +380,545 @@
 	overflow-y: auto;
 	white-space: pre-line;
 	}
+	
+	.bigsettingsbox {
+	display: flex;
+	width: 70vw;
+	height: 50dvh;
+	position: absolute;
+	top: 28.6dvh;
+	left: 50%;
+	transform: translateX(-50%);
+	border: .6dvh solid #000000;
+	border-radius: 1dvh;
+	background-color: white;
+	}
 
+	.settings-boxes {
+	border: .3dvh solid #000000;
+	position: absolute;
+	border-radius: 1dvh;
+	overflow-y: auto;
+	}
+
+	.settings-box1 {
+	width: 40%;
+	height: 40%;
+	align-self: center;
+	left: 26.6%;
+	transform: translateX(-50%);
+	}
+
+	.settings-box2 {
+	width: 40%;
+	height: 40%;
+	align-self: center;
+	right: 26.6%;
+	transform: translateX(50%);
+	}
+
+	.settings-box3 {
+	width: 50%;
+	height: 40%;
+	align-self: center;
+	right: 50%;
+	transform: translateX(50%);
+	}
+
+	.settingsradio {
+	color: black;
+	font-weight: bold;
+	font-size: 0.8vmax;
+	font-family: "Tahoma";
+	position: absolute;
+	top: 25%;
+	left: 5%;
+	}
+
+	.settingsradio2 {
+	left: 25%;
+	}
+
+	.answerbox {
+	position: absolute;
+	display: flex;
+	left: 50%;
+	top: 70%;
+	transform: translate(-50%, -50%);
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	font-weight: bold;
+	font-size: 1.3vmax;
+	font-family: "Tahoma";
+	background-color: white;
+	width: fit-content;
+	height: 5dvh;
+	border-radius: 2dvh;
+	padding-left: 10.5vmax;
+	padding-right: 10.5vmax;
+	}
+
+	.answerboxcalculator {
+	position: absolute;
+	display: flex;
+	left: 50%;
+	top: 71%;
+	transform: translate(-50%, -50%);
+	align-items: center;
+	justify-content: center;
+	gap: 1vh;
+	text-align: center;
+	font-weight: bold;
+	font-size: 1.3vmax;
+	font-family: "Tahoma";
+	}
+
+	.abcde {
+	color: black;
+	font-weight: bold;
+	font-size: 0.8vmax;
+	font-family: "Tahoma";
+	display: flex;
+	gap: 1.5vw;
+	align-items: center;
+	transform: scale(1.5) translateX(-.7%);
+	}
+	
+	.abcde span {
+	display: flex;
+	gap: .3vw;
+	align-items: center;
+	}
+
+	.testcontainers {
+	position: absolute;
+	height: 84dvh;
+	}
+
+	.testquestionscontainer {
+	width: 59.9vw;
+	left: 0%;
+	bottom: 0%;
+	}
+
+	.testquestionscontainercalculator {
+	width: 100vw;
+	left: 0%;
+	bottom: 0%;
+	}
+
+	.teststatscontainer {
+	width: 59.9vw;
+	left: 0%;
+	top: 100%;
+	transform: translate(0%, -100%);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	}
+
+	.testanswerscontainer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+	width: 39.9vw;
+	left: 100%;
+	top: 100%;
+	transform: translate(-100%, -100%);
+	background-color: white;
+	outline: .2vw solid black;
+	}
+
+	.questionboxtestscience {
+	position: absolute;
+	width: 70%;
+	height: auto;
+	max-height: 70%;
+	left: 50%;
+	top: 40.5%;
+	transform: translate(-50%, -50%);
+	outline: .6dvh solid #000000;
+	cursor: zoom-in;
+	}
+
+	.questionboxtestmath {
+	position: absolute;
+	width: 90%;
+	height: auto;
+	max-height: 70%;
+	left: 50%;
+	top: 40.5%;
+	transform: translate(-50%, -50%);
+	outline: .6dvh solid #000000;
+	cursor: zoom-in;
+	}
+
+	.questionboxtestcalculator {
+	position: absolute;
+	max-width: 50%;
+	max-height: 55%;
+	left: 50%;
+	bottom: 40%;
+	transform: translateX(-50%);
+	outline: .6dvh solid #000000;
+	cursor: zoom-in;
+	}
+
+	.testquestioncolumn {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	height: 100%;
+	width: 30%;
+	align-self: center;
+	}
+
+	.testquestioncolumncontainer {
+	display: flex;
+	justify-content: space-evenly;
+	width: 100%;
+	height: 85%;
+	overflow-y: auto;
+	}
+
+	.testquestionrow {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	width: 100%;
+	font-weight: bold;
+	font-size: 1.1vmax;
+	font-family: "Tahoma";
+	line-height: 1;
+	}
+
+	.testquestionbuttons {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 1vw;
+	color: #003559;
+	text-decoration: underline;
+	font-weight: bold;
+	font-size: 1.1vmax;
+	font-family: "Tahoma";
+	line-height: 1;
+	cursor: pointer;
+	background: inherit;
+	border: none;
+	}
+
+	.testanswerbuttons {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 1vw;
+	color: #003559;
+	text-decoration: underline;
+	font-weight: bold;
+	font-size: 1.1vmax;
+	font-family: "Tahoma";
+	line-height: 1;
+	cursor: pointer;
+	background: inherit;
+	border: none;
+	}
+
+	.testtimer {
+	display: flex;
+	position: absolute;
+	width: 8vw;
+	height: 6dvh;
+	left: 50vw;
+	top: 8.75dvh;
+	transform: translateX(-50%);
+	font-weight: bold;
+	font-size: 1.5vmax;
+	font-family: "Tahoma";
+	line-height: 1;
+	justify-content: center;
+	gap: .2vw;
+	align-items: center;
+	border: 0px solid #000000;
+	background-color: white;
+	line-height: 1;
+	box-sizing: border-box;
+	}
+
+	.testtimerscience {
+	display: flex;
+	position: absolute;
+	width: 8vw;
+	height: 6dvh;
+	left: 50vw;
+	top: 8.75dvh;
+	transform: translateX(-50%);
+	font-weight: bold;
+	font-size: 1.5vmax;
+	font-family: "Tahoma";
+	line-height: 1;
+	justify-content: center;
+	gap: .1vw;
+	align-items: center;
+	border: 0px solid #000000;
+	background-color: white;
+	line-height: 1;
+	box-sizing: border-box;
+	}
+
+	.testtimernumber {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 25%;
+	}
+
+	.testendbox {
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	width: 60%;
+	height: 25%;
+	border: .6dvh solid #000000;
+	border-radius: 1dvh;
+	color: #000000;
+	align-items: center;
+	justify-content: center;
+	gap: .5dvh;
+	text-align: center;
+	font-weight: bold;
+	font-size: 1.3vmax;
+	font-family: "Tahoma";
+	overflow-y: auto;
+	}
+
+	.testendboxsmall {
+	height: 15%;
+	}
+
+	.testresultsimageanswersboxscience {
+	position: absolute;
+	display: flex;
+	top: 65.5dvh;
+	left: 50%;
+	transform: translateX(-50%);
+	outline: .6dvh solid #000000;
+	justify-content: space-evenly;
+	align-items: center;
+	width: 35vw;
+	height: 10dvh;
+	background-color: white;
+	}
+
+	.testresultsimageanswersboxmath {
+	position: absolute;
+	display: flex;
+	top: 65dvh;
+	left: 50%;
+	transform: translateX(-50%);
+	outline: .6dvh solid #000000;
+	justify-content: space-evenly;
+	align-items: center;
+	width: 45vw;
+	height: 10dvh;
+	background-color: white;
+	}
+
+	.testresultsimageanswersboxcalculator {
+	position: absolute;
+	display: flex;
+	top: 65.5%;
+	left: 50%;
+	transform: translateX(-50%);
+	outline: .6dvh solid #000000;
+	justify-content: space-evenly;
+	align-items: center;
+	width: 45vw;
+	height: 9dvh;
+	background-color: white;
+	}
+
+	.testresultsimageanswers {
+	display: flex;
+	width: 40%;
+	height: 100%;
+	font-weight: bold;
+	font-size: 1vmax;
+	font-family: "Tahoma";
+	line-height: 1;
+	justify-content: center;
+	align-items: center;
+	}
+
+	.pausebutton {
+	position: absolute;
+	width: 6dvh;
+	height: 6dvh;
+	left: 55vw;
+	top: 8.75dvh;
+	cursor: pointer;
+	pointer-events: auto;
+	filter: invert(1);
+	}
+
+	.currenttestquestion {
+	position: relative;
+	bottom: .3dvh;
+	width: 2vw;
+	display: flex;
+	justify-content: center;
+	color: white;
+	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+	}
+
+	.currenttestquestionanswerboxcontainer {
+	position: absolute;
+	bottom: 15%;
+	width: 50%;
+	left: 50%;
+	transform: translateX(-50%);
+	display: flex;
+	justify-content: center;
+	gap: 2vw;
+	align-items: center;
+	color: white;
+	font-family: "Tahoma";
+	text-align: center;
+	font-weight: bold;
+	font-size: 1.5vw;
+	line-height: 1;
+	}
+
+	.currenttestquestionanswerbox {
+	width: 3vw;
+	font-size: 1.5vw;
+	text-align: center;
+	}
+
+	.currenttestquestionanswerboxcalculator {
+	width: 5vw;
+	font-size: 1.5vw;
+	text-align: center;
+	}
+
+	.referencescreen {
+	background-color: #000000;
+	opacity: .8;
+	z-index: 100000;
+	}
+
+	.referencesheetcontainer {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	height: 90dvh;
+	width: 70vw;
+	z-index: 100001;
+	overflow: hidden;
+	}
+
+	.referencesheet {
+	width: 100%;
+	height: 100%;
+	border: .6dvh solid white;
+	cursor: zoom-in;
+	}
+
+	.xbutton {
+	position: absolute;
+	width: 3dvh;
+	height: 3dvh;
+	right: 2dvh;
+	top: 2dvh;
+	cursor: pointer;
+	pointer-events: auto;
+	z-index: 100001;
+	}
+
+	.referencebutton {
+	width: 6dvh;
+	height: 6dvh;
+	cursor: pointer;
+	pointer-events: auto;
+	filter: invert(1);
+	}
+
+	.referencebuttontest {
+	position: absolute;
+	right: 55vw;
+	top: 8.75dvh;
+	}
+
+	.zoomedscreen {
+	background-color: #000000;
+	opacity: .8;
+	z-index: 10000;
+	}
+
+	.referencezoomed {
+	transform: scale(2);
+	cursor: zoom-out;
+	}
+
+	.questionzoomed {
+	cursor: zoom-out;
+	position: fixed;
+	top: 50dvh;
+	left: 50vw;
+	transform: translate(-50%, -50%) scale(10);
+	z-index: 10001;
+	max-height: 9dvh;
+	max-width: 9vw;
+	width: auto;
+	height: auto;
+	outline: .06dvh solid #000000;
+	}
+
+	.inputbox {
+	width: 15vw;
+	height: 5dvh;
+	font-size: inherit;
+	font-family: inherit;
+	text-align: inherit;
+	border: 0px solid #000000;
+	border-radius: 1dvh;
+	}
+
+	.scinotationbutton {
+	height: 5dvh;
+	width: 5vw;
+	background-color: #ea3031;
+	color: white;
+	border: 0px solid #000000;
+	border-radius: 1dvh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: inherit;
+	font-family: inherit;
+	text-align: inherit;
+	box-sizing: content-box;
+	cursor: pointer;
+	font-weight: bold;
+	}
+
+
+    
 	.fontsize2vmax {
 	font-size: 2vmax;	
 	}
 
 	.fontsizesmaller {
 	font-size: .75em;
+	}
+
+	.fontsizelarger {
+	font-size: 1.33em;	
 	}
 
 	.none {
@@ -329,7 +937,10 @@
 	color: black;	
 	}
 
+	.orange {
+	color: rgb(255, 136, 0);
+	}
+
 	.cursorpointer {
 	cursor: pointer;
 	}
-	
